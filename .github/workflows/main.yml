@@ -19,6 +19,6 @@ jobs:
             cd ~/app/backend
             git fetch origin main
             git reset --hard origin/main
-            ./gradlew build
+            sudo ./gradlew build
             cd ~/app
             sudo docker-compose up --build -d
